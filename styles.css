@@ -1,0 +1,58 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    color: #f2f2f2;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  /* Active link style */
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Navbar style when scrolled */
+  .navbar.scrolled {
+    background-color: #222;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+  
+  /* Prevent content from hiding behind navbar */
+  main {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  
+  /* Section styles */
+  section {
+    height: 600px;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
